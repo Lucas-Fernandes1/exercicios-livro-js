@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break | Continue</title>
+</head>
+
+<body>
+    <script>
+        alert("Digite 0 para sair");
+
+        do {
+            var num = Number(prompt("Informe um número: "));
+
+            if (num == 0 || isNaN(num)) {
+                var sair = confirm("Confirma saída?");
+                if (sair) {
+                    break;
+                } else {
+                    continue;
+                }
+            }
+
+
+            if (num % 2 == 0) {
+                alert("O dobro do " + num + " é " + num * 2);
+            } else {
+                alert("O triplo do " + num + " é " + num * 3);
+            }
+        } while (true);
+
+        alert("bye, bye!");
+    </script>
+</body>
+
+</html>
